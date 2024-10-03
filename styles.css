@@ -3,8 +3,12 @@
     font-family: 'GoodDog';
     src: url(./fonts/good_dog/GOODDP__.TTF) format('truetype');
 }
+@font-face {
+    font-family: 'HelveticaNow';
+    src: url(./fonts/helvetica-now-font-family-1727953346-0/helveticanowtext-black-demo.ttf) format('truetype');
+}
 body {
-    font-family: 'GoodDog', sans-serif;
+    font-family: 'HelveticaNow', sans-serif;
     font-size: larger;
     margin: 0;
     padding: 0;
@@ -118,6 +122,35 @@ main {
     max-width: 300px;
     border: 1px solid #ccc;
 }
+
+.titol_acerca {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre el título y la sección siguiente */
+}
+
+.contenidor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_acerca {
+    font-family: 'helvetica now', comic-sans;
+    text-align: center;
+    width: 40%;
+    margin-right: 20px;
+}
+
+.foto_acerca {
+    width: 40%;
+}
+
+.foto_acerca img {
+    width: 100%;
+}
+
+
+
 
 footer {
     text-align: center;
