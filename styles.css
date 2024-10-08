@@ -40,13 +40,12 @@ body {
     align-items: left;
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #4CAF50;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     color: white;
 }
 
@@ -62,7 +61,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 1.25rem; /* 20px -> 1.25rem */
 }
 
 nav ul li a {
@@ -73,19 +72,19 @@ nav ul li a {
 .download a {
     background-color: #333;
     color: white;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem; /* 10px 20px -> 0.625rem 1.25rem */
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px -> 0.3125rem */
 }
 
 main {
-    padding: 20px;
+    padding: 1.25rem; /* 20px -> 1.25rem */
 }
 
 .game-title h2 {
     text-align: center;
     font-size: 2.5em;
-    margin-top: 20px;
+    margin-top: 1.25rem; /* 20px -> 1.25rem */
 }
 
 .game-intro {
@@ -93,16 +92,16 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.25rem; /* 20px -> 1.25rem */
 }
 
 .game-intro img {
     width: 100%;
-    max-width: 600px;
+    max-width: 37.5rem; /* 600px -> 37.5rem */
 }
 
 #caracteristicas {
-    margin-top: 40px;
+    margin-top: 2.5rem; /* 40px -> 2.5rem */
 }
 
 .features {
@@ -114,18 +113,18 @@ main {
 .feature-item {
     width: 30%;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
 }
 
 .feature-item img {
     width: 100%;
-    max-width: 300px;
+    max-width: 18.75rem; /* 300px -> 18.75rem */
     border: 1px solid #ccc;
 }
 
 .titol_acerca {
     text-align: center;
-    margin-bottom: 20px; /* Espacio entre el título y la sección siguiente */
+    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
 }
 
 .contenidor {
@@ -138,7 +137,7 @@ main {
     font-family: 'helvetica now', comic-sans;
     text-align: center;
     width: 40%;
-    margin-right: 20px;
+    margin-right: 1.25rem; /* 20px -> 1.25rem */
 }
 
 .foto_acerca {
@@ -149,14 +148,11 @@ main {
     width: 100%;
 }
 
-
-
-
 footer {
     text-align: center;
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 0.625rem; /* 10px -> 0.625rem */
     position: relative;
     bottom: 0;
     width: 100%;
