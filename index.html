@@ -11,6 +11,7 @@
         <div class="logo">
             <img src="./img/LOGO.png" alt="logo">
         </div>
+        <!-- Menú de navegación -->
         <nav>
             <ul>
                 <li><a href="#acerca">Acerca de</a></li>
@@ -21,28 +22,32 @@
         <div class="download">
             <a href="#">Descargar</a>
         </div>
+        
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
     </header>
 
+    
+    <div class="overlay"></div>
+
     <div class="hero">
-        <img src="./img/overlaay.jpg" alt="Imagen Principal"> <!-- Cambia la ruta a tu imagen -->
+        <img src="./img/overlaay.jpg" alt="Imagen Principal">
     </div>
 
     <main>
-        <section id="acerca"></section>
+        <section id="acerca">
             <div class="titol_acerca">
                 <h2>Ten el poder de ser un jugador de primera!</h2>
             </div>
             <div class="contenidor">
                 <div class="text_acerca">
-                    <p>En un universo donde las cabezas desafían las leyes de la gravedad, se desata una batalla titánica entre gigantes intelectuales y ágiles atletas. En los campos de Fútbol Cabezones, la pelota no es solo un objeto, sino un símbolo de gloria, un arma para conquistar y un sueño por alcanzar.</p>
-                    <p>En cada partido, los jugadores, con sus cabezas desproporcionadas, se enfrentan en duelos épicos que trascienden lo deportivo. Sus miradas, tan profundas como los cráteres de la luna, se cruzan en un desafío silencioso, mientras sus pies, ágiles como gacelas, trazan arabescos imposibles en el césped cósmico.</p>
-                    <p>Los estadios, coliseos suspendidos en el vacío, son testigos de gestas heroicas y derrotas desgarradoras. La multitud, una marea de emociones, ruge y alienta a sus campeones, mientras la tensión se corta con un cuchillo. Cada gol es un grito de victoria que resuena en el cosmos, cada atajada, una muralla inexpugnable que detiene el avance del rival.</p>  
+                    <p>En un universo donde las cabezas desafían las leyes de la gravedad...</p>
                 </div>
                 <div class="foto_acerca">
                     <img src="img/fotoJuego.jpg" alt="Imagen de fútbol">
                 </div>
             </div>
         </section>
+
         <section id="caracteristicas">  
             <h2>Características</h2>
             <div class="features">
@@ -65,6 +70,12 @@
     <footer>
         <p>© 2024 Soccer Heads. Todos los derechos reservados.</p>
     </footer>
-</body>
 
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector("nav ul").classList.toggle("active");
+            document.querySelector(".overlay").classList.toggle("active");
+        });
+    </script>
+</body>
 </html>
