@@ -21,7 +21,9 @@
         <div class="download">
             <a href="#">Descargar</a>
         </div>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
     </header>
+    <div class="overlay"></div>
     <div class="hero">
         <img src="../img/overlaay.jpg" alt="Imagen Principal"> 
     </div>
@@ -42,5 +44,11 @@
     <footer>
         <p>© 2024 Soccer Heads. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector("nav ul").classList.toggle("active");
+            document.querySelector(".overlay").classList.toggle("active");
+        });
+    </script>
 </body>
 </html>

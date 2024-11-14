@@ -1,4 +1,4 @@
-/* Basic styles for body and layout */
+/* Fuentes personalizadas */
 @font-face {
     font-family: 'GoodDog';
     src: url(./fonts/good_dog/GOODDP__.TTF) format('truetype');
@@ -7,6 +7,8 @@
     font-family: 'HelveticaNow';
     src: url(./fonts/helvetica-now-font-family-1727953346-0/helveticanowtext-black-demo.ttf) format('truetype');
 }
+
+/* Estilos generales */
 body {
     font-family: 'HelveticaNow', sans-serif;
     font-size: larger;
@@ -14,33 +16,15 @@ body {
     padding: 0;
     background-color: #f0f0f0;
 }
-/*16px = 1em*/
+
+/* Reset de márgenes y paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.hero {
-    width: 100%;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero img {
-    width: 100%;
-    height: auto; /* Ajusta la altura automáticamente */
-    display: block;
-    object-fit: cover; /* Cubre el área del contenedor sin deformarse */
-}
-
-.logo {
-    height: 10vh;
-    display: flex;
-    align-items: left;
-}
-
+/* Estilos del header y logo */
 header {
     display: flex;
     justify-content: space-between;
@@ -48,21 +32,18 @@ header {
     background-color: #4CAF50;
     padding: 1rem 2rem;
     color: white;
+    position: relative;
 }
 
-header .logo h1 {
-    margin: 0;
+.logo img {
+    height: 3rem;
 }
 
+/* Menú de navegación */
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-}
-
-nav ul li {
-    margin-left: 1.25rem; /* 20px -> 1.25rem */
+    gap: 1.25rem;
 }
 
 nav ul li a {
@@ -70,96 +51,163 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Botón de descarga */
 .download a {
     background-color: #333;
     color: white;
-    padding: 0.625rem 1.25rem; /* 10px 20px -> 0.625rem 1.25rem */
+    padding: 0.625rem 1.25rem;
     text-decoration: none;
-    border-radius: 0.3125rem; /* 5px -> 0.3125rem */
+    border-radius: 0.3125rem;
 }
 
+/* Botón de menú hamburguesa */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Fondo oscuro cuando el menú está activo */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 5;
+}
+
+/* Activa el overlay cuando se muestra el menú */
+.overlay.active {
+    display: block;
+}
+
+/* Hero */
+.hero {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Contenido principal */
 main {
-    padding: 1.25rem; /* 20px -> 1.25rem */
-}
-
-.game-title h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-top: 1.25rem; /* 20px -> 1.25rem */
-}
-
-.game-intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 1.25rem; /* 20px -> 1.25rem */
-}
-
-.game-intro img {
-    width: 100%;
-    max-width: 37.5rem; /* 600px -> 37.5rem */
-}
-
-#caracteristicas {
-    margin-top: 2.5rem; /* 40px -> 2.5rem */
-}
-
-.features {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.feature-item {
-    width: 30%;
-    text-align: center;
-    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
-}
-
-.feature-item img {
-    width: 100%;
-    max-width: 18.75rem; /* 300px -> 18.75rem */
-    border: 1px solid #ccc;
+    padding: 1.25rem;
 }
 
 .titol_acerca {
     text-align: center;
-    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+    margin-bottom: 1.25rem;
 }
 
 .contenidor {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
 }
 
 .text_acerca {
-    font-family: 'helvetica now', comic-sans;
+    width: 50%;
     text-align: center;
-    width: 50vw;
-    margin-right: 1.25rem; /* 20px -> 1.25rem */
+    font-family: 'helvetica now', comic-sans;
 }
 
-.text_acerca p{
+.text_acerca p {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
 .foto_acerca {
-    width: 50vw;
+    width: 50%;
 }
 
 .foto_acerca img {
     width: 100%;
 }
 
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.feature-item {
+    width: 30%;
+    text-align: center;
+}
+
+.feature-item img {
+    width: 100%;
+    max-width: 18.75rem;
+    border: 1px solid #ccc;
+}
+
 footer {
     text-align: center;
     background-color: #333;
     color: white;
-    padding: 0.625rem; /* 10px -> 0.625rem */
+    padding: 0.625rem;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #4CAF50;
+        padding: 1rem;
+        width: 60%;
+        height: 100vh;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .overlay.active {
+        display: block;
+    }
+
+    .contenidor {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .text_acerca,
+    .foto_acerca {
+        width: 100%;
+    }
+
+    .feature-item {
+        width: 100%;
+    }
 }
