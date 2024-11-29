@@ -102,6 +102,13 @@ nav ul li a {
     object-fit: cover;
 }
 
+#caracteristicas h2 {
+    margin-top: 2rem; /* Agregar espacio adicional por encima del título */
+    margin-bottom: 1rem; /* Controlar el espaciado debajo del título */
+    font-size: 2rem; /* Resaltar el título si es necesario */
+    text-align: center;
+}
+
 /* Contenido principal */
 main {
     padding: 1.25rem;
@@ -129,6 +136,7 @@ main {
 .text_acerca p {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    text-align: justify;
 }
 
 .foto_acerca {
@@ -154,7 +162,7 @@ main {
 
 .feature-item img {
     width: 100%;
-    max-width: 18.75rem;
+    max-width: 40rem;
     border: 1px solid #ccc;
 }
 
