@@ -48,8 +48,9 @@ header {
     z-index: 1000; /* Asegura que esté sobre otros elementos */
     color: #fff; /* Texto blanco */
     text-align: center; /* Centra el texto */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;}
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10px;
+}
 /* Título del aside */
 .anuncio h3 {
     margin-bottom: 10px;
@@ -211,6 +212,8 @@ main {
     border: 1px solid #ccc;
 }
 
+
+
 footer {
     text-align: center;
     background-color: #333;
@@ -262,5 +265,13 @@ footer {
 
     .feature-item {
         width: 100%;
+    }
+
+}
+
+@media (max-width: 1300px)
+{
+    .anuncio {
+        display: none;
     }
 }
